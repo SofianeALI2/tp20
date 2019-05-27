@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Choix d'ajout</title>
   </head>
   <body>
-  $END$
+  <a href="createLivresServlet">Livres</a>
+  <a href="createMusicServlet">Musiques</a>
   </body>
 </html>

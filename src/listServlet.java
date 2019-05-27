@@ -1,3 +1,4 @@
+import modeles.Livres;
 import modeles.Musique;
 
 import javax.ejb.EJB;
@@ -14,6 +15,8 @@ import java.util.List;
 public class listServlet extends HttpServlet {
     @EJB
     MusiqueDAO musiqueDAO;
+    @EJB
+    LivresDAO livresDAO;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -23,5 +26,10 @@ public class listServlet extends HttpServlet {
         request.setAttribute("musiqueList",musicList);
         RequestDispatcher dp = request.getRequestDispatcher("list.jsp");
         dp.forward(request,response);
+
+        List<Livres> livresList = livresDAO.findAll();
+        request.setAttribute("livresList",musicList);
+        RequestDispatcher ap = request.getRequestDispatcher("list.jsp");
+        ap.forward(request,response);
     }
 }

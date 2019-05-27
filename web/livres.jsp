@@ -20,19 +20,18 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<a href="createLivresServlet">Livres</a>
-<a href="createLivresServlet">Films</a>
+<a href="${pageContext.request.contextPath}/createLivresServlet">Livres</a>
 
-<h1 class="title">Insertion d'une musique</h1>
+<h1 class="title">Insertion d'un Livres</h1>
 <div class="container">
     <div class="row">
         <div class="col">
         </div>
         <div class="col-6">
-            <form class="musicCreate" action="./createMusicServlet" method="post">
+            <form class="musicCreate" action="./createLivresServlet" method="post">
                 <div class="form-group">
-                    <label>Titre de la musique</label>
-                    <input class="form-control" type="text" placeholder="Titre" name="TitreMusique">
+                    <label>Titre du Livres</label>
+                    <input class="form-control" type="text" placeholder="Titre" name="TitreLivres">
                 </div>
                 <div class="form-group">
                     <label>Artiste</label>
@@ -40,8 +39,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Durée (en seconde)</label>
-                    <input class="form-control" type="number" placeholder="0" min="0" name="Duree">
+                    <label>Nombre de Pages</label>
+                    <input class="form-control" type="number" placeholder="0" min="0" name="Pages">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
