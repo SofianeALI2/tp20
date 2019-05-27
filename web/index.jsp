@@ -13,5 +13,6 @@
   <body>
   <a href="livres.jsp">Livres</a>
   <a href="create.jsp">Musiques</a>
+  <a href="createFilm.jsp">Film</a>
   </body>
 </html>
