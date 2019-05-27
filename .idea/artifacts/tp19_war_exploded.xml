@@ -9,9 +9,8 @@
           <element id="jpa-descriptors" facet="tp19/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="mysql-connector-java-5.1.47" />
           <element id="library" level="project" name="org.eclipse.persistence:eclipselink:2.7.4" />
-          <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="mysql:mysql-connector-java:8.0.16" />
         </element>
       </element>
     </root>
