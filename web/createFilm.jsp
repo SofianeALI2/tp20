@@ -21,31 +21,31 @@
 </head>
 <body>
 <a href="createLivresServlet">Livres</a>
-<a href="createFilm.jsp">Films</a>
+<a href="createFilmServlet">Films</a>
 
-<h1 class="title">Insertion d'une musique</h1>
+<h1 class="title">Insertion d'un film</h1>
 <div class="container">
     <div class="row">
         <div class="col">
         </div>
         <div class="col-6">
-            <form class="musicCreate" action="./createMusicServlet" method="post">
+            <form class="musicCreate" action="./createLivreServlet" method="post">
                 <div class="form-group">
-                    <label>Titre de la musique</label>
-                    <input class="form-control" type="text" placeholder="Titre" name="TitreMusique">
+                    <label>Titre du film</label>
+                    <input class="form-control" type="text" placeholder="Titre" name="TitreFilm">
                 </div>
                 <div class="form-group">
-                    <label>Artiste</label>
-                    <input class="form-control" type="text" placeholder="Artiste" name="Artiste">
+                    <label>Nom du réalisateur</label>
+                    <input class="form-control" type="text" placeholder="Réalisateur" name="Réalisateur">
                 </div>
 
                 <div class="form-group">
-                    <label>Durée (en seconde)</label>
-                    <input class="form-control" type="number" placeholder="0" min="0" name="Duree">
+                    <label>Année)</label>
+                    <input class="form-control" type="number" placeholder="2000" min="0" name="Annee">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-            <a href="listServlet" id="listAccessText">Voir la liste </a>
+            <a href="listFilmServlet" id="listAccessText">Voir la liste </a>
         </div>
         <div class="col">
         </div>
