@@ -1,28 +1,25 @@
-import modeles.Musique;
+import modeles.Film;
 
-import javax.annotation.Resource;
+import javax.ejb.EJB;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebListener;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.transaction.NotSupportedException;
-import javax.transaction.SystemException;
-import javax.transaction.UserTransaction;
-import java.io.IOException;
 
 @WebListener
 public class StartupListener implements ServletContextListener {
 
 
+    @EJB
+    FilmDAO filmDAO;
+
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         System.out.println("STARTING");
+        Film f = new Film("NoM",2002,"Realisateur");
+        System.out.println(f);
+        filmDAO.addFilm(f);
 
 
     }
