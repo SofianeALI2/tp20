@@ -20,7 +20,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/createLivresServlet">Livres</a>
+<a href="index.jsp">Retour</a>
 
 <h1 class="title">Insertion d'un Livres</h1>
 <div class="container">

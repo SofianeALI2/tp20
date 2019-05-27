@@ -20,8 +20,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<a href="createLivresServlet">Livres</a>
-<a href="createLivresServlet">Films</a>
+<a href="index.jsp">Retour</a>
 
 <h1 class="title">Insertion d'une musique</h1>
 <div class="container">

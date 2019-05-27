@@ -22,14 +22,14 @@ public class createLivresServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Livres newLivres = new Livres(request.getParameter("TitreLivres"),request.getParameter("Artiste"),
                 Integer.parseInt(request.getParameter("Pages")));
         LivresDAO.addLivres(newLivres);
         response.sendRedirect("listServlet");
+
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 }

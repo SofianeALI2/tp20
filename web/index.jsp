@@ -11,7 +11,7 @@
     <title>Choix d'ajout</title>
   </head>
   <body>
-  <a href="createLivresServlet">Livres</a>
-  <a href="createMusicServlet">Musiques</a>
+  <a href="livres.jsp">Livres</a>
+  <a href="create.jsp">Musiques</a>
   </body>
 </html>

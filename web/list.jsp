@@ -23,7 +23,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-
+<a href="index.jsp">Retour</a>
 <main>
     <h1 class = "title">Liste des musiques</h1>
     <div class="divList">
@@ -65,6 +65,46 @@
     </div>
 
 </main>
+
+<h1 class = "title">Liste des Livres</h1>
+<div class="divList">
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class = thead-light>
+                <tr>
+                    <th scope="col">Titre</th>
+                    <th scope="col">Artiste</th>
+                    <th scope="col">Pages</th>
+                    <th score="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach var="i" items="${livresList}">
+                    <tr>
+                        <td>${i.getTitre()}</td>
+                        <td>${i.getArtiste()}</td>
+                        <td>${i.getpages()}</td>
+                        <td>
+                            <form action="deleteServlet" method="post">
+                                <button type="submit" class="buttonDelete">
+                                    <input type="hidden" name="delete" value="${i.getId()}">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </form>
+
+                        </td>
+                    </tr>
+
+
+
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 
 
 
